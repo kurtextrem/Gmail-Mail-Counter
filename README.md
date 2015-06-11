@@ -7,4 +7,4 @@ Icon by Abhishek Pipalva.
 
 [Chrome Web Store](https://chrome.google.com/webstore/detail/cmdjfmokkblaapkclnhnefeokpkmkkkl)
 
-<img src="https://raw.githubusercontent.com/kurtextrem/Gmail-Auto-Expander/master/Screenshot_156.png">
+<img src="https://raw.githubusercontent.com/kurtextrem/Gmail-Mail-Counter/master/Screenshot_156.png">

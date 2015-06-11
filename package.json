@@ -4,7 +4,8 @@
 		"rimraf": "latest",
 		"json-minify": "latest",
 		"shelljs": "latest",
-		"zip-dir": "latest"
+		"zip-dir": "latest",
+		"cssnano": "latest"
 	},
 	"scripts": {
 		"clean": "rimraf dist && mkdir dist",
@@ -14,7 +15,9 @@
 
 		"copy": "node build.js copy",
 
-		"build": "npm run clean & npm run js & npm run json & npm run copy",
+		"css": "cssnano src/content.css dist/content.min.css",
+
+		"build": "npm run clean & npm run js & npm run json & npm run copy & npm run css",
 		"postjs": "node build.js replaceJS",
 		"postjson": "node build.js replaceJSON",
 		"postbuild": "node build.js buildZip"

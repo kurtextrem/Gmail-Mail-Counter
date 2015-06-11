@@ -46,6 +46,7 @@ var shell = require('shelljs'),
 
 	Build.prototype.replaceJSON = function () {
 		shell.sed('-i', 'contentscript.js', 'contentscript.min.js', 'dist/manifest.json')
+		shell.sed('-i', 'content.css', 'content.min.css', 'dist/manifest.json')
 	}
 
 	Build.prototype.buildZip = function () {

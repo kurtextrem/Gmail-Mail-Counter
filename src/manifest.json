@@ -17,7 +17,7 @@
 			"*://mail.google.com/*"
 		],
 		"js": ["contentscript.js"],
-		"css": ["bubble.css"],
+		"css": ["content.css"],
 		"run_at": "document_end",
 		"all_frames": true
 	}],

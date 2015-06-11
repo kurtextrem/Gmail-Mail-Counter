@@ -10,7 +10,7 @@
 	"scripts": {
 		"clean": "rimraf dist && mkdir dist",
 
-		"js": "uglifyjs -c drop_console=false src/contentscript.js > dist/contentscript.min.js",
+		"js": "uglifyjs -c drop_console=true src/contentscript.js > dist/contentscript.min.js",
 		"json": "json-minify src/manifest.json > dist/manifest.json",
 
 		"copy": "node build.js copy",

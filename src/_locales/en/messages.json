@@ -1,0 +1,10 @@
+{
+	"extDesc": {
+		"message": "Shows the mail count of the conversation next to the scrollbar in Gmail™.",
+		"description": "Extension description."
+	},
+	"extName": {
+		"message": "Message Counter for Gmail™",
+		"description": "Extension name."
+	}
+}

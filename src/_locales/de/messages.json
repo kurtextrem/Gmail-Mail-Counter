@@ -1,0 +1,10 @@
+{
+	"extDesc": {
+		"message": "Zeigt die Anzahl der Mails aus der Konversation an der Seite an in Gmail™.",
+		"description": "Extension description."
+	},
+	"extName": {
+		"message": "Nachrichten Zähler für Gmail™",
+		"description": "Extension name."
+	}
+}

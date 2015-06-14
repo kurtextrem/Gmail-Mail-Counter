@@ -46,14 +46,17 @@
 	App.prototype.updateBubble = function () {
 		var elem = document.querySelector('div[role="main"] table[role="presentation"] td > div:last-child div:nth-child(3)')
 		console.log(elem)
-		if (elem[0]) {
-			var count = elem.length
-			if (count > 1) {
-				this.elem.children[0].textContent = count
-				return this.showBubble()
+		if (elem) {
+			elem = elem.querySelectorAll('.kv, .hn, .h7')
+
+			if (elem[0]) {
+				elem = elem.length // count
+				if (elem > 1) {
+					this.elem.children[0].textContent = elem
+					return this.showBubble()
+				}
 			}
 		}
-
 		this.hideBubble()
 	}
 

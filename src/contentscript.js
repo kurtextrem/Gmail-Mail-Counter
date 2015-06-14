@@ -44,7 +44,7 @@
 	 * @date   	2015-06-11
 	 */
 	App.prototype.updateBubble = function () {
-		var elem = document.querySelector('table[role="presentation"] td > div:last-child div:nth-child(3)').querySelectorAll('.kv, .hn')
+		var elem = document.querySelector('div[role="main"] table[role="presentation"] td > div:last-child div:nth-child(3)')
 		console.log(elem)
 		if (elem[0]) {
 			var count = elem.length

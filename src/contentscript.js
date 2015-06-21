@@ -44,7 +44,7 @@
 	 * @date   	2015-06-11
 	 */
 	App.prototype.updateBubble = function () {
-		var elem = document.querySelector('div[role="main"] table[role="presentation"] td > div:last-child div:nth-child(3)')
+		var elem = document.querySelector('div[role="main"] table[role="presentation"] td > div:last-child > div:nth-child(2) div:nth-child(3)')
 		console.log(elem)
 		if (elem) {
 			elem = elem.querySelectorAll('.kv, .hn, .h7')
@@ -75,7 +75,6 @@
 	 *
 	 * @author 	Jacob Groß
 	 * @date   	2015-06-11
-	 * @return {[type]}    [description]
 	 */
 	App.prototype.showBubble = function () {
 		this.elem.classList.remove('hide')

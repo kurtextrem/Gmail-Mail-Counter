@@ -1,6 +1,6 @@
 {
 	"name": "__MSG_extName__",
-	"version": "0.1.3",
+	"version": "1.0.0",
 	"manifest_version": 2,
 
 	"description": "__MSG_extDesc__",
@@ -18,7 +18,7 @@
 		],
 		"js": ["contentscript.js"],
 		"css": ["content.css"],
-		"run_at": "document_end",
+		"run_at": "document_idle",
 		"all_frames": true
 	}],
 	"minimum_chrome_version": "33",

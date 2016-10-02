@@ -39,11 +39,6 @@ var shell = require('shelljs'),
 		shell.cp('-r', 'src/img', 'dist')
 	}
 
-	/** use strict is faster than w/o */
-	Build.prototype.replaceJS = function () {
-		//shell.sed('-i', '"use strict";', '', 'dist/inject.min.js')
-	}
-
 	Build.prototype.replaceJSON = function () {
 		shell.sed('-i', 'contentscript.js', 'contentscript.min.js', 'dist/manifest.json')
 		shell.sed('-i', 'content.css', 'content.min.css', 'dist/manifest.json')

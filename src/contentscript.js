@@ -1,4 +1,4 @@
-+function (window) {
+(function (window) {
 	'use strict';
 
 	var document = window.document
@@ -92,4 +92,4 @@
 	}
 
 	new App()
-} (window);
+} (window));

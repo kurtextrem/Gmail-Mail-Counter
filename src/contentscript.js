@@ -9,7 +9,7 @@
 	 * @author 	Jacob Groß
 	 * @date   	2015-06-07
 	 */
-	var App = function () {
+	function App() {
 		/** @type 	{Node} 		Represents the bubble. */
 		this.elem = document.createElement('div')
 		this.elem.classList.add('bubble--container')
@@ -22,13 +22,15 @@
 		// this.init() - see issue gmail-entire-message issue #2
 	}
 
+	var proto = App.prototype
+
 	/**
 	 * Adds the bubble.
 	 *
 	 * @author 	Jacob Groß
 	 * @date   	2015-06-07
 	 */
-	App.prototype.init = function () {
+	proto.init = function () {
 		if (window.location.hash.indexOf('/') === -1) return this.hideBubble()
 		if (this.added) return this.updateBubble()
 
@@ -43,7 +45,7 @@
 	 * @author 	Jacob Groß
 	 * @date   	2015-06-11
 	 */
-	App.prototype.updateBubble = function () {
+	proto.updateBubble = function () {
 		var elem = document.querySelector('div[role="main"] table[role="presentation"] td > div:last-child > div:nth-child(2) div:nth-child(3)')
 		console.log(elem)
 		if (elem) {
@@ -53,6 +55,7 @@
 				elem = elem.length // count
 				if (elem > 1) {
 					this.elem.children[0].textContent = elem
+					// window.requestIdleCallback(this.updateBubble.bind(this)) // a few msgs might be loading
 					return this.showBubble()
 				}
 			}
@@ -66,7 +69,7 @@
 	 * @author 	Jacob Groß
 	 * @date   	2015-06-11
 	 */
-	App.prototype.hideBubble = function () {
+	proto.hideBubble = function () {
 		this.elem.classList.add('hide')
 	}
 
@@ -76,7 +79,7 @@
 	 * @author 	Jacob Groß
 	 * @date   	2015-06-11
 	 */
-	App.prototype.showBubble = function () {
+	proto.showBubble = function () {
 		this.elem.classList.remove('hide')
 	}
 
@@ -86,7 +89,7 @@
 	 * @author 	Jacob Groß
 	 * @date   	2015-06-07
 	 */
-	App.prototype.addListener = function () {
+	proto.addListener = function () {
 		/** hashchanges */
 		window.addEventListener('hashchange', this.init.bind(this), false)
 	}

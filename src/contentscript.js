@@ -19,14 +19,16 @@
 	 */
 	const label = /#label\/.+\/.+/
 	const inbox = /#(inbox|imp|all)\/.+/
+	const hide = () => window.requestAnimationFrame(hideBubble)
+	const update = () => window.requestAnimationFrame(updateBubble)
 	function init() {
 		const hash = document.location.hash
-		if (!label.test(hash) && !inbox.test(hash)) return hideBubble()
-		if (added) return updateBubble()
+		if (!label.test(hash) && !inbox.test(hash)) return hide()
+		if (added) return update()
 
 		document.body.appendChild(div)
 		added = true
-		updateBubble()
+		update()
 	}
 
 	/**
@@ -60,7 +62,8 @@
 	 * @date   	2015-06-11
 	 */
 	function hideBubble() {
-		div.classList.add('hide')
+		div.setAttribute('aria-hidden', 'true')
+		div.style.display = 'none'
 	}
 
 	/**
@@ -70,7 +73,8 @@
 	 * @date   	2015-06-11
 	 */
 	function showBubble() {
-		div.classList.remove('hide')
+		div.removeAttribute('aria-hidden')
+		div.style.display = 'block'
 	}
 
 	/**

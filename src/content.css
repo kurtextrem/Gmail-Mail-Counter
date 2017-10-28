@@ -2,16 +2,19 @@
 	position: absolute;
 	top: 35%;
 	right: 26px;
+	z-index: 1000;
+	width: 50px;
+	height: 40px;
+	will-change: transform;
+	contain: size layout;
 }
 
-.bubble--container.hide {
-	transform: translateY(-1000px);
+.bubble--container[aria-hidden] {
+	display: none;
 }
 
 .bubble {
 	position: relative;
-	width: 50px;
-	height: 40px;
 	padding: 0;
 	background: #eee;
 	border-radius: 3px;
@@ -23,7 +26,7 @@
 }
 
 /** Arrow */
-.bubble:after {
+.bubble::after {
 	content: '';
 	position: absolute;
 	border-style: solid;

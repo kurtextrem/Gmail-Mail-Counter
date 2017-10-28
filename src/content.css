@@ -9,10 +9,6 @@
 	contain: size layout;
 }
 
-.bubble--container[aria-hidden] {
-	display: none;
-}
-
 .bubble {
 	position: relative;
 	padding: 0;

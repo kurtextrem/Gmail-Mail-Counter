@@ -1,22 +1,22 @@
 .bubble--container {
 	position: absolute;
 	top: 35%;
-	right: 26px;
+	right: 5.1em;
 	z-index: 1000;
 	width: 50px;
 	height: 40px;
-	will-change: transform;
+	will-change: opacity;
 	contain: size layout;
 }
 
 .bubble {
 	position: relative;
 	padding: 0;
-	background: #eee;
+	background: #ccc;
 	border-radius: 3px;
 	/*border: #eee solid 2px;*/
 	cursor: default;
-	color: #333;
+	color: #202124;
 	line-height: 40px;
 	text-align: center;
 }
@@ -27,13 +27,45 @@
 	position: absolute;
 	border-style: solid;
 	border-width: 15px 0 15px 15px;
-	border-color: transparent #eee;
+	border-color: transparent #ccc;
 	display: block;
 	width: 0;
 	z-index: 1;
 	margin-top: -15px;
 	right: -15px;
 	top: 50%;
+}
+
+.bAp.b8.UC .vh {
+	max-width: 394px !important;
+	padding: 10px 14px !important;
+	opacity: 0.95;
+	border-top-left-radius: 0 !important;
+	margin: 0 !important;
+	contain: content;
+	box-shadow: none !important;
+}
+
+.b8 .bBe {
+	right: 8px !important;
+	top: 12px !important;
+}
+
+.bAq {
+	margin: 6px 0 !important;
+}
+
+.bAo {
+	margin-left: -9px !important;
+	height: 30px !important;
+}
+
+.bAo>.ad {
+	height: 30px !important;
+}
+
+div.b8 .a8k {
+	margin-left: 0 !important;
 }
 
 /** Border

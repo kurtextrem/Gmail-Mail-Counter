@@ -41,6 +41,8 @@
 	padding: 10px 14px !important;
 	opacity: 0.95;
 	border-top-left-radius: 0 !important;
+	border-bottom-left-radius: 0 !important;
+	border-bottom-right-radius: 0 !important;
 	margin: 0 !important;
 	contain: content;
 	box-shadow: none !important;

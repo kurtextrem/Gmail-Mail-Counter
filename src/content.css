@@ -49,8 +49,8 @@
 }
 
 .b8 .bBe {
-	right: 8px !important;
-	top: 12px !important;
+	right: 0 !important;
+	top: 0 !important;
 }
 
 .bAq {
@@ -58,11 +58,12 @@
 }
 
 .bAo {
+	marin-right: 0 !important;
 	margin-left: -9px !important;
 	height: 30px !important;
 }
 
-.bAo>.ad {
+.bAo > .ad {
 	height: 30px !important;
 }
 
